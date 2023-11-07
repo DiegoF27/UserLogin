@@ -61,6 +61,7 @@
             btnEntrar.TabIndex = 1;
             btnEntrar.Text = "ENTRAR";
             btnEntrar.UseVisualStyleBackColor = false;
+            btnEntrar.Click += btnEntrar_Click;
             // 
             // lblLogin
             // 

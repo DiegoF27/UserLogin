@@ -29,28 +29,18 @@
         private void InitializeComponent()
         {
             lblBv = new Label();
-            lblAguarde = new Label();
             SuspendLayout();
             // 
             // lblBv
             // 
             lblBv.AutoSize = true;
+            lblBv.FlatStyle = FlatStyle.Popup;
             lblBv.Font = new Font("Arial", 36F, FontStyle.Italic, GraphicsUnit.Point);
-            lblBv.Location = new Point(12, 29);
+            lblBv.Location = new Point(10, 39);
             lblBv.Name = "lblBv";
             lblBv.Size = new Size(253, 55);
             lblBv.TabIndex = 0;
             lblBv.Text = "Bem-vindo";
-            // 
-            // lblAguarde
-            // 
-            lblAguarde.AutoSize = true;
-            lblAguarde.Location = new Point(12, 84);
-            lblAguarde.Name = "lblAguarde";
-            lblAguarde.Size = new Size(61, 15);
-            lblAguarde.TabIndex = 1;
-            lblAguarde.Text = "Aguarde...";
-            lblAguarde.Click += label2_Click;
             // 
             // Acesso
             // 
@@ -58,10 +48,10 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.Control;
             ClientSize = new Size(275, 128);
-            Controls.Add(lblAguarde);
             Controls.Add(lblBv);
-            FormBorderStyle = FormBorderStyle.None;
+            FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Name = "Acesso";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Acesso";
             ResumeLayout(false);
             PerformLayout();
@@ -70,6 +60,5 @@
         #endregion
 
         private Label lblBv;
-        private Label lblAguarde;
     }
 }
